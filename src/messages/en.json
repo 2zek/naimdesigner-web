@@ -3,7 +3,8 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "portfolio": "Portfolio"
   },
   "common": {
     "contactMe": "Contact Me",
@@ -12,12 +13,29 @@
     "seeMoreServices": "See More Services",
     "phone": "Phone",
     "location": "Location",
-    "copyright": "Copyright © All Rights Reserved."
+    "copyright": "Copyright © All Rights Reserved.",
+    "price": "Price",
+    "viewDetails": "View Details",
+    "buyNow": "Get a Quote"
   },
   "hero": {
     "title": "LET'S DESIGN YOUR DREAM MODEL.",
     "subtitle": "We turn your imagination into 3D reality with professional design solutions.",
-    "cta": "Contact Me Now"
+    "cta": "Contact Me Now",
+    "slides": {
+      "1": {
+        "title": "DESIGN YOUR DREAM MODEL.",
+        "subtitle": "Bringing the designs of the future to life in 3D today."
+      },
+      "2": {
+        "title": "POWER OF INDUSTRIAL DESIGN.",
+        "subtitle": "Precision modeling solutions for every industry from aviation to automotive."
+      },
+      "3": {
+        "title": "DIGITAL ART & ENGINEERING.",
+        "subtitle": "Excellence hidden in details, a bridge from imagination to reality."
+      }
+    }
   },
   "services": {
     "title": "Industries We Serve",
@@ -62,5 +80,13 @@
   },
   "footer": {
     "description": "Professional 3D design and modeling services for all industries."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Our latest 3D models and drawings",
+    "featured": "Featured Models",
+    "allModels": "All Models",
+    "category": "Category",
+    "specifications": "Specifications"
   }
 }

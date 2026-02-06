@@ -3,7 +3,8 @@
     "home": "Ana Sayfa",
     "about": "Hakkımda",
     "services": "Hizmetler",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "portfolio": "Portfolyo"
   },
   "common": {
     "contactMe": "Bana Ulaşın",
@@ -12,12 +13,29 @@
     "seeMoreServices": "Daha Fazla Hizmet Gör",
     "phone": "Telefon",
     "location": "Konum",
-    "copyright": "Copyright © Tüm Hakları Saklıdır."
+    "copyright": "Copyright © Tüm Hakları Saklıdır.",
+    "price": "Fiyat",
+    "viewDetails": "Detayları Gör",
+    "buyNow": "Satın Al / Teklif Al"
   },
   "hero": {
     "title": "HAYALİNİZDEKİ MODELİ TASARLAYALIM.",
     "subtitle": "Profesyonel tasarım çözümleriyle hayallerinizi 3 boyutlu gerçekliğe dönüştürüyoruz.",
-    "cta": "Bana Hemen Ulaşın"
+    "cta": "Bana Hemen Ulaşın",
+    "slides": {
+      "1": {
+        "title": "HAYALİNİZDEKİ MODELİ TASARLAYALIM.",
+        "subtitle": "Geleceğin tasarımlarını bugünden 3 boyutlu hale getiriyoruz."
+      },
+      "2": {
+        "title": "ENDÜSTRİYEL TASARIMIN GÜCÜ.",
+        "subtitle": "Havacılıktan otomotive, her sektör için hassas modelleme çözümleri."
+      },
+      "3": {
+        "title": "DİJİTAL SANAT VE MÜHENDİSLİK.",
+        "subtitle": "Detaylarda gizli mükemmellik, hayalden gerçeğe uzanan köprü."
+      }
+    }
   },
   "services": {
     "title": "Hizmet Verdiğimiz Sektörler",
@@ -62,5 +80,13 @@
   },
   "footer": {
     "description": "Tüm sektörler için profesyonel 3D tasarım ve modelleme hizmetleri."
+  },
+  "portfolio": {
+    "title": "Portfolyo",
+    "subtitle": "En yeni 3D modellerimiz ve çizimlerimiz",
+    "featured": "Öne Çıkan Modeller",
+    "allModels": "Tüm Modeller",
+    "category": "Kategori",
+    "specifications": "Teknik Detaylar"
   }
 }

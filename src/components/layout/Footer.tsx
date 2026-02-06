@@ -12,6 +12,7 @@ export function Footer() {
     { href: `/${locale}`, label: tn('home') },
     { href: `/${locale}/about`, label: tn('about') },
     { href: `/${locale}/services`, label: tn('services') },
+    { href: `/${locale}/portfolio`, label: tn('portfolio') },
     { href: `/${locale}/contact`, label: tn('contact') },
   ];
 

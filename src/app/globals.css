@@ -2,14 +2,14 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
   --primary: #C2A44D;
   --primary-dark: #A68B3D;
   --card: #ffffff;
-  --card-foreground: #171717;
+  --card-foreground: #000000;
   --border: #e5e7eb;
-  --muted: #f3f4f6;
-  --muted-foreground: #6b7280;
+  --muted: #f9fafb;
+  --muted-foreground: #4b5563;
 }
 
 .dark {
