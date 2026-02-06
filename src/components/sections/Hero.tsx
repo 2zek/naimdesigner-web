@@ -87,15 +87,15 @@ export function Hero() {
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                 className="relative z-10 w-full h-full flex items-center justify-center"
               >
-                <div className="relative w-full h-full">
-                  <Image
-                    src="/tofas.jpg"
-                    alt="3D Industrial Design"
-                    fill
-                    className="object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] dark:drop-shadow-[0_35px_35px_rgba(194,164,77,0.15)]"
-                    priority
-                  />
-                </div>
+                  <div className="relative w-full h-full flex items-center justify-center">
+                    <Image
+                      src="/hero-model.svg"
+                      alt="3D Technical Blueprint"
+                      fill
+                      className="object-contain text-primary/40 drop-shadow-[0_20px_50px_rgba(194,164,77,0.1)] scale-110"
+                      priority
+                    />
+                  </div>
               </motion.div>
 
               {/* Backglow for the model */}
