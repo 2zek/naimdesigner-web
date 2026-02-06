@@ -1,0 +1,66 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "services": "Hizmetler",
+    "contact": "İletişim"
+  },
+  "common": {
+    "contactMe": "Bana Ulaşın",
+    "callNow": "Hemen Ara",
+    "readMore": "Devamını Oku",
+    "seeMoreServices": "Daha Fazla Hizmet Gör",
+    "phone": "Telefon",
+    "location": "Konum",
+    "copyright": "Copyright © Tüm Hakları Saklıdır."
+  },
+  "hero": {
+    "title": "HAYALİNİZDEKİ MODELİ TASARLAYALIM.",
+    "subtitle": "Profesyonel tasarım çözümleriyle hayallerinizi 3 boyutlu gerçekliğe dönüştürüyoruz.",
+    "cta": "Bana Hemen Ulaşın"
+  },
+  "services": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "subtitle": "Çeşitli sektörlerde profesyonel 3D tasarım hizmetleri",
+    "aviation": {
+      "title": "Havacılık",
+      "description": "Havacılık ve uzay endüstrisi için yüksek hassasiyetli 3D modelleme."
+    },
+    "automotive": {
+      "title": "Otomotiv",
+      "description": "Detaylı araç tasarımları ve otomotiv bileşen modellemesi."
+    },
+    "bioprint": {
+      "title": "Biyo Baskı",
+      "description": "Medikal ve biyo baskı uygulamaları için 3D modeller."
+    },
+    "consumer": {
+      "title": "Tüketici Teknolojisi",
+      "description": "Tüketici elektroniği ve teknoloji için ürün tasarımları."
+    },
+    "dental": {
+      "title": "Diş ve Medikal",
+      "description": "Hassas medikal cihaz ve diş ekipmanı modellemesi."
+    },
+    "industrial": {
+      "title": "Endüstriyel",
+      "description": "Endüstriyel ekipman ve makine tasarım çözümleri."
+    }
+  },
+  "cta": {
+    "title": "Hayallerinizi 3 Boyutlu Gerçekliğe Dönüştürüyoruz!",
+    "subtitle": "Bir sonraki projeniz için bizimle iletişime geçin."
+  },
+  "about": {
+    "title": "Hakkımda",
+    "description": "Profesyonel 3D tasarım ve modelleme hizmetleri."
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bizimle iletişime geçin",
+    "address": "İstanbul / Ümraniye"
+  },
+  "footer": {
+    "description": "Tüm sektörler için profesyonel 3D tasarım ve modelleme hizmetleri."
+  }
+}

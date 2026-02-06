@@ -1,0 +1,66 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "common": {
+    "contactMe": "Contact Me",
+    "callNow": "Call Now",
+    "readMore": "Read More",
+    "seeMoreServices": "See More Services",
+    "phone": "Phone",
+    "location": "Location",
+    "copyright": "Copyright © All Rights Reserved."
+  },
+  "hero": {
+    "title": "LET'S DESIGN YOUR DREAM MODEL.",
+    "subtitle": "We turn your imagination into 3D reality with professional design solutions.",
+    "cta": "Contact Me Now"
+  },
+  "services": {
+    "title": "Industries We Serve",
+    "subtitle": "Professional 3D design services across various sectors",
+    "aviation": {
+      "title": "Aviation",
+      "description": "High-precision 3D modeling for aviation and aerospace industries."
+    },
+    "automotive": {
+      "title": "Automotive",
+      "description": "Detailed vehicle designs and automotive component modeling."
+    },
+    "bioprint": {
+      "title": "Bio Printing",
+      "description": "3D models for medical and bio-printing applications."
+    },
+    "consumer": {
+      "title": "Consumer Tech",
+      "description": "Product designs for consumer electronics and technology."
+    },
+    "dental": {
+      "title": "Dental & Medical",
+      "description": "Precise medical device and dental equipment modeling."
+    },
+    "industrial": {
+      "title": "Industrial",
+      "description": "Industrial equipment and machinery design solutions."
+    }
+  },
+  "cta": {
+    "title": "We Turn Your Dreams Into 3D Reality!",
+    "subtitle": "Get in touch with us for your next project."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Professional 3D design and modeling services."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with us",
+    "address": "Istanbul / Umraniye"
+  },
+  "footer": {
+    "description": "Professional 3D design and modeling services for all industries."
+  }
+}
