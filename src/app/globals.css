@@ -3,13 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #E53935;
-  --primary-dark: #C62828;
+  --primary: #C2A44D;
+  --primary-dark: #A68B3D;
+  --card: #ffffff;
+  --card-foreground: #171717;
+  --border: #e5e7eb;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
 }
 
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --card: #0f0f0f;
+  --card-foreground: #ededed;
+  --border: #1f1f1f;
+  --muted: #161616;
+  --muted-foreground: #a1a1aa;
 }
 
 @theme {
@@ -17,6 +27,11 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   

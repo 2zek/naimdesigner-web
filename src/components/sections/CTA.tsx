@@ -9,7 +9,7 @@ export function CTA() {
   const tc = useTranslations('common');
 
   return (
-    <section className="relative py-20 lg:py-32 bg-gray-900 dark:bg-gray-950 overflow-hidden">
+    <section className="relative py-20 lg:py-32 bg-gray-900 dark:bg-background overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
