@@ -40,46 +40,46 @@
   "services": {
     "title": "Industries We Serve",
     "subtitle": "Professional 3D design services across various sectors",
-    "aviation": {
-      "title": "Aviation",
-      "description": "High-precision 3D modeling for aviation and aerospace industries."
+    "machine": {
+      "title": "Machine Design & Drafting",
+      "description": "Precision machine design, technical drawing, and mechanical part modeling based on Solidworks."
     },
-    "automotive": {
-      "title": "Automotive",
-      "description": "Detailed vehicle designs and automotive component modeling."
+    "modelling": {
+      "title": "3D Modelling",
+      "description": "Detailed industrial modeling, high-end rendering, and digital product development."
     },
-    "bioprint": {
-      "title": "Bio Printing",
-      "description": "3D models for medical and bio-printing applications."
+    "printing": {
+      "title": "3D Printing Solutions",
+      "description": "SLA and FDM technologies for high-quality parts production and functional prototyping."
     },
-    "consumer": {
-      "title": "Consumer Tech",
-      "description": "Product designs for consumer electronics and technology."
+    "airsoft": {
+      "title": "Airsoft Customs",
+      "description": "Custom designed parts, tactical modifications, and modeling for airsoft equipment."
     },
-    "dental": {
-      "title": "Dental & Medical",
-      "description": "Precise medical device and dental equipment modeling."
+    "prototyping": {
+      "title": "Rapid Prototyping",
+      "description": "Fast and economical transition of designs into physical reality."
     },
-    "industrial": {
-      "title": "Industrial",
-      "description": "Industrial equipment and machinery design solutions."
+    "consulting": {
+      "title": "Technical Consulting",
+      "description": "Expert advice on manufacturing techniques, design optimization, and material selection."
     }
   },
   "cta": {
-    "title": "We Turn Your Dreams Into 3D Reality!",
-    "subtitle": "Get in touch with us for your next project."
+    "title": "Combining Design with Engineering!",
+    "subtitle": "Your professional partner for mechanical solutions and 3D technologies."
   },
   "about": {
-    "title": "About Us",
-    "description": "Professional 3D design and modeling services."
+    "title": "About Me",
+    "description": "3D Design Expert & Industrial Modeller."
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Get in touch with us",
+    "subtitle": "Get technical support and a quote for your project",
     "address": "Istanbul / Umraniye"
   },
   "footer": {
-    "description": "Professional 3D design and modeling services for all industries."
+    "description": "Boutique design studio offering mechanical design, 3D printing, and custom modeling solutions."
   },
   "portfolio": {
     "title": "Portfolio",

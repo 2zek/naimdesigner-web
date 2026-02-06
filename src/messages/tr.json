@@ -40,46 +40,46 @@
   "services": {
     "title": "Hizmet Verdiğimiz Sektörler",
     "subtitle": "Çeşitli sektörlerde profesyonel 3D tasarım hizmetleri",
-    "aviation": {
-      "title": "Havacılık",
-      "description": "Havacılık ve uzay endüstrisi için yüksek hassasiyetli 3D modelleme."
+    "machine": {
+      "title": "Makine Tasarımı & Çizim",
+      "description": "Solidworks temelli hassas makine tasarımı, teknik çizim ve mekanik parça modelleme."
     },
-    "automotive": {
-      "title": "Otomotiv",
-      "description": "Detaylı araç tasarımları ve otomotiv bileşen modellemesi."
+    "modelling": {
+      "title": "3D Modelleme",
+      "description": "Detaylı endüstriyel modelleme, render ve dijital ürün geliştirme."
     },
-    "bioprint": {
-      "title": "Biyo Baskı",
-      "description": "Medikal ve biyo baskı uygulamaları için 3D modeller."
+    "printing": {
+      "title": "3D Baskı Çözümleri",
+      "description": "FDM ve SLA teknolojileri ile yüksek kaliteli parça üretimi ve prototipleme."
     },
-    "consumer": {
-      "title": "Tüketici Teknolojisi",
-      "description": "Tüketici elektroniği ve teknoloji için ürün tasarımları."
+    "airsoft": {
+      "title": "Airsoft Özelleştirme",
+      "description": "Airsoft ekipmanları için özel tasarım parçalar, modifikasyon ve modelleme."
     },
-    "dental": {
-      "title": "Diş ve Medikal",
-      "description": "Hassas medikal cihaz ve diş ekipmanı modellemesi."
+    "prototyping": {
+      "title": "Hızlı Prototipleme",
+      "description": "Tasarımların fiziksel gerçekliğe hızlı ve ekonomik şekilde aktarılması."
     },
-    "industrial": {
-      "title": "Endüstriyel",
-      "description": "Endüstriyel ekipman ve makine tasarım çözümleri."
+    "consulting": {
+      "title": "Teknik Danışmanlık",
+      "description": "Üretim teknikleri, tasarım optimizasyonu ve malzeme seçimi konusunda danışmanlık."
     }
   },
   "cta": {
-    "title": "Hayallerinizi 3 Boyutlu Gerçekliğe Dönüştürüyoruz!",
-    "subtitle": "Bir sonraki projeniz için bizimle iletişime geçin."
+    "title": "Tasarımı Mühendislikle Buluşturuyoruz!",
+    "subtitle": "Mekanik çözümler ve 3D teknolojiler için profesyonel ortağınız."
   },
   "about": {
     "title": "Hakkımda",
-    "description": "Profesyonel 3D tasarım ve modelleme hizmetleri."
+    "description": "3D Tasarım Uzmanı ve Endüstriyel Modelleyici."
   },
   "contact": {
     "title": "İletişim",
-    "subtitle": "Bizimle iletişime geçin",
+    "subtitle": "Projeniz için teknik destek ve teklif alın",
     "address": "İstanbul / Ümraniye"
   },
   "footer": {
-    "description": "Tüm sektörler için profesyonel 3D tasarım ve modelleme hizmetleri."
+    "description": "Makine tasarımı, 3D baskı ve özel modelleme çözümleri sunan butik tasarım atölyesi."
   },
   "portfolio": {
     "title": "Portfolyo",
