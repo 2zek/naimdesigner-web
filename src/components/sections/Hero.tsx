@@ -9,7 +9,7 @@ export function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-20 lg:pt-32 overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center pt-48 lg:pt-56 overflow-hidden bg-background">
       {/* Background decorations - Technical Blueprint Grid */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30 dark:opacity-50">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808025_1px,transparent_1px),linear-gradient(to_bottom,#80808025_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
@@ -38,10 +38,10 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-foreground leading-[0.95] tracking-tighter mb-8"
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-foreground leading-[0.95] tracking-tighter mb-8"
             >
               <span className="font-serif block opacity-100 mb-2">{t('title')}</span>
-              <span className="text-primary italic text-3xl sm:text-4xl lg:text-5xl block mt-6 font-medium tracking-normal">
+              <span className="text-primary italic text-2xl lg:text-3xl block mt-6 font-medium tracking-normal">
                 Industrial Atelier & Design
               </span>
             </motion.h1>
@@ -50,7 +50,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl sm:text-2xl text-muted-foreground mb-12 max-w-2xl leading-relaxed font-semibold"
+              className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-2xl leading-relaxed font-semibold"
             >
               {t('subtitle')}
             </motion.p>

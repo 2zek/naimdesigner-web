@@ -33,9 +33,13 @@ export function Header() {
   ];
 
   return (
-    <header className="w-full z-50 flex flex-col">
-      {/* Top Bar - Only shows at the very top */}
-      <div className="w-full bg-muted/30 backdrop-blur-md border-b border-border/40 py-2.5 hidden sm:block">
+    <header className="absolute top-0 left-0 w-full z-50 flex flex-col">
+      {/* Top Bar - Only shows background on scroll for Hero unity */}
+      <div className={`w-full transition-all duration-500 hidden sm:block ${
+        isScrolled 
+          ? "bg-white/95 dark:bg-background/95 backdrop-blur-md border-b border-border/40 py-2.5" 
+          : "bg-transparent border-b border-transparent py-4"
+      }`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between text-[11px] font-bold text-muted-foreground uppercase tracking-wider">
           {/* Social Icons Left */}
           <div className="flex items-center gap-7">
@@ -72,9 +76,9 @@ export function Header() {
       <div className={isScrolled ? 'h-24 lg:h-32' : ''}>
         <motion.nav 
           layout
-          className={`w-full transition-all duration-300 z-[49] ${
+          className={`w-full transition-all duration-500 z-[49] ${
             isScrolled 
-              ? 'fixed top-0 left-0 bg-white/95 dark:bg-background/95 backdrop-blur-2xl border-b border-border shadow-md py-2 animate-in fade-in slide-in-from-top-2 duration-400' 
+              ? 'fixed top-0 left-0 bg-white/95 dark:bg-background/95 backdrop-blur-2xl border-b border-border shadow-xl py-2 animate-in fade-in slide-in-from-top-2' 
               : 'relative bg-transparent py-6 lg:py-8'
           }`}
         >
