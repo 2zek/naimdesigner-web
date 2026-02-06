@@ -1,5 +1,5 @@
 import { setRequestLocale } from 'next-intl/server';
-import { BannerSlider } from '@/components/sections/BannerSlider';
+import { Hero } from '@/components/sections/Hero';
 import { Services } from '@/components/sections/Services';
 import { PortfolioSection } from '@/components/sections/PortfolioSection';
 import { CTA } from '@/components/sections/CTA';
@@ -14,7 +14,7 @@ export default async function HomePage({ params }: HomePageProps) {
 
   return (
     <>
-      <BannerSlider />
+      <Hero />
       <Services />
       <PortfolioSection />
       <CTA />

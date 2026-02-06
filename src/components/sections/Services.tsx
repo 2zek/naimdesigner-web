@@ -53,7 +53,7 @@ export function Services() {
   ];
 
   return (
-    <section className="py-20 lg:py-32 bg-gray-50 dark:bg-background">
+    <section className="py-20 lg:py-32 bg-white dark:bg-background border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <motion.div
@@ -63,10 +63,10 @@ export function Services() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             {t('title')}
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
         </motion.div>

@@ -23,12 +23,12 @@ export function ThemeToggle() {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="relative w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
+      className="relative w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center transition-colors hover:bg-gray-300 dark:hover:bg-gray-700 shadow-sm"
       aria-label="Toggle theme"
     >
       {/* Sun icon */}
       <svg
-        className={`w-5 h-5 text-yellow-500 transition-all ${
+        className={`w-5 h-5 text-yellow-600 transition-all ${
           theme === 'dark' ? 'scale-0 rotate-90' : 'scale-100 rotate-0'
         }`}
         fill="none"

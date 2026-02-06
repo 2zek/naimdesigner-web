@@ -3,97 +3,114 @@
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Button } from '../ui/Button';
+import Image from 'next/image';
 
 export function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-gray-50 dark:from-background dark:via-background dark:to-muted">
-      {/* Background decorations */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white dark:bg-background">
+      {/* Background decorations - More depth */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[120px] opacity-40 -translate-y-1/2 translate-x-1/4" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[100px] opacity-30 translate-y-1/4 -translate-x-1/4" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,transparent_0%,var(--background)_100%)] opacity-50" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-0">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Content */}
+          {/* Content side: Glassmorphism Card */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center lg:text-left"
+            transition={{ duration: 1 }}
+            className="relative"
           >
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white leading-tight"
-            >
-              <span className="font-serif">{t('title')}</span>
-            </motion.h1>
+            <div className="relative z-10 p-8 lg:p-12 rounded-[2.5rem] bg-white/40 dark:bg-white/[0.03] backdrop-blur-2xl border border-white/20 dark:border-white/10 shadow-2xl overflow-hidden group">
+              {/* Card glow effect */}
+              <div className="absolute -top-24 -left-24 w-48 h-48 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-colors duration-500" />
+              
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-[1.1] mb-6"
+              >
+                <span className="font-serif block opacity-90">{t('title')}</span>
+                <span className="text-primary italic text-3xl sm:text-4xl lg:text-5xl block mt-2">Design Studio</span>
+              </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-6 text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto lg:mx-0"
-            >
-              {t('subtitle')}
-            </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-xl leading-relaxed"
+              >
+                {t('subtitle')}
+              </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-            >
-              <Button href="#contact" size="lg">
-                {t('cta')}
-              </Button>
-            </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="flex flex-col sm:flex-row gap-4"
+              >
+                <Button href="#contact" size="lg" className="px-8 shadow-xl shadow-primary/20">
+                  {t('cta')}
+                </Button>
+                <Button href={`/portfolio`} variant="outline" size="lg" className="px-8 border-border text-foreground hover:bg-white/10">
+                  Portfolio
+                </Button>
+              </motion.div>
+            </div>
           </motion.div>
 
-          {/* 3D Illustration placeholder */}
+          {/* 3D Scene: Tofaş Model */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
+            initial={{ opacity: 0, scale: 0.8, rotateY: 20 }}
+            animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+            transition={{ duration: 1.2, delay: 0.3 }}
             className="relative hidden lg:block"
           >
-            <div className="relative w-full aspect-square max-w-lg mx-auto">
-              {/* Floating elements animation */}
+            <div className="relative w-full aspect-square max-w-2xl mx-auto">
+              {/* Floating Base */}
               <motion.div
-                animate={{ y: [-10, 10, -10] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute inset-0 bg-gradient-to-br from-primary/20 to-blue-500/20 rounded-3xl"
-              />
-              <motion.div
-                animate={{ y: [10, -10, 10] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute inset-4 bg-gradient-to-tr from-gray-100 to-white dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-2xl flex items-center justify-center"
+                animate={{ 
+                  y: [-20, 20, -20],
+                  rotate: [0, 2, 0]
+                }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                className="relative z-10 w-full h-full flex items-center justify-center"
               >
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 mx-auto mb-4 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <svg className="w-12 h-12 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
-                    </svg>
-                  </div>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm">3D Design Studio</p>
+                <div className="relative w-full h-full">
+                  <Image
+                    src="/tofas.jpg"
+                    alt="3D Tofaş Design"
+                    fill
+                    className="object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] dark:drop-shadow-[0_35px_35px_rgba(194,164,77,0.15)]"
+                    priority
+                  />
                 </div>
               </motion.div>
 
-              {/* Decorative floating elements */}
-              <motion.div
-                animate={{ x: [-5, 5, -5], y: [-5, 5, -5] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 w-16 h-16 bg-primary rounded-xl shadow-lg"
-              />
-              <motion.div
-                animate={{ x: [5, -5, 5], y: [5, -5, 5] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -left-4 w-12 h-12 bg-blue-500 rounded-lg shadow-lg"
-              />
+              {/* Backglow for the model */}
+              <div className="absolute inset-0 bg-primary/10 rounded-full blur-[100px] scale-75 animate-pulse" />
+              
+              {/* Decorative tags */}
+              <motion.div 
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, delay: 1 }}
+                className="absolute top-1/4 -right-4 bg-white/80 dark:bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-xs font-bold tracking-widest shadow-lg z-20"
+              >
+                3D MODEL
+              </motion.div>
+              <motion.div 
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 5, repeat: Infinity, delay: 2 }}
+                className="absolute bottom-1/4 -left-4 bg-white/80 dark:bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-xs font-bold tracking-widest shadow-lg z-20"
+              >
+                PBR TEXTURES
+              </motion.div>
             </div>
           </motion.div>
         </div>

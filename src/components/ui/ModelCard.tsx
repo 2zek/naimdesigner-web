@@ -42,22 +42,22 @@ export function ModelCard({ title, category, price, image, index = 0 }: ModelCar
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
+        <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors leading-tight">
           {title}
         </h3>
         
         {price && (
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-gray-400 text-sm">{t('price')}</span>
-            <span className="text-primary font-bold text-lg">{price}</span>
+          <div className="flex items-center justify-between mb-6">
+            <span className="text-muted-foreground text-sm font-medium">{t('price')}</span>
+            <span className="text-primary font-bold text-xl">{price}</span>
           </div>
         )}
 
-        <div className="flex gap-2">
-          <Button variant="outline" size="sm" className="flex-1 text-xs">
+        <div className="flex gap-3">
+          <Button variant="outline" size="sm" className="flex-1 text-xs font-bold border-border text-foreground hover:bg-muted">
             {t('viewDetails')}
           </Button>
-          <Button variant="primary" size="sm" className="flex-1 text-xs px-2">
+          <Button variant="primary" size="sm" className="flex-1 text-xs font-bold px-2">
             {t('buyNow')}
           </Button>
         </div>

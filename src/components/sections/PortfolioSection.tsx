@@ -43,10 +43,10 @@ export function PortfolioSection() {
             viewport={{ once: true }}
             className="max-w-2xl"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
               <span className="text-primary">{t('featured')}</span> {t('title')}
             </h2>
-            <p className="text-lg text-gray-400">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               {t('subtitle')}
             </p>
           </motion.div>

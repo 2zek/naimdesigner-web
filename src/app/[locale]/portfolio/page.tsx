@@ -56,10 +56,10 @@ export default function PortfolioPage() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground mb-6">
             <span className="text-primary">{t('title')}</span>
           </h1>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
         </motion.div>

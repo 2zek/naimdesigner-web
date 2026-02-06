@@ -49,28 +49,28 @@ export default function ModelDetailPage() {
             className="flex flex-col"
           >
             <div className="mb-8">
-              <span className="text-primary font-medium mb-4 block">{modelData.category}</span>
-              <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              <span className="text-primary font-bold mb-4 block uppercase tracking-widest text-sm">{modelData.category}</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 leading-tight">
                 {modelData.title}
               </h1>
-              <p className="text-xl text-gray-400 leading-relaxed max-w-xl">
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
                 {modelData.description}
               </p>
             </div>
 
-            <div className="bg-card border border-border rounded-2xl p-8 mb-8">
-              <div className="flex items-center justify-between mb-8">
-                <span className="text-gray-400">{t('category')}</span>
-                <span className="text-white font-bold text-2xl">{modelData.price}</span>
+            <div className="bg-card border border-border rounded-2xl p-8 mb-8 shadow-sm">
+              <div className="flex items-center justify-between mb-8 pb-6 border-b border-border/50">
+                <span className="text-muted-foreground font-medium">{t('category')}</span>
+                <span className="text-foreground font-bold text-3xl">{modelData.price}</span>
               </div>
               
-              <div className="space-y-4 mb-8">
-                <h3 className="text-white font-bold">{t('specifications')}</h3>
+              <div className="space-y-6 mb-8">
+                <h3 className="text-foreground font-bold text-lg">{t('specifications')}</h3>
                 <div className="grid grid-cols-2 gap-4">
                   {modelData.specs.map((spec, index) => (
-                    <div key={index} className="flex flex-col p-3 bg-background rounded-xl border border-border/50">
-                      <span className="text-xs text-gray-500">{spec.label}</span>
-                      <span className="text-sm text-gray-200 font-medium">{spec.value}</span>
+                    <div key={index} className="flex flex-col p-4 bg-muted/50 rounded-xl border border-border/50 transition-colors hover:border-primary/30">
+                      <span className="text-xs text-muted-foreground mb-1 uppercase tracking-wider font-bold">{spec.label}</span>
+                      <span className="text-sm text-foreground font-bold">{spec.value}</span>
                     </div>
                   ))}
                 </div>
